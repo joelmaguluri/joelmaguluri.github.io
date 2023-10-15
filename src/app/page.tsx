@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="bg-[rgb(21,35,32)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 duration-500">
       <Head>
-        <title>Sudeep's Portfolio</title>
+        <title>{`Sudeep's Portfolio`}</title>
       </Head>
       <Header />
       {/* Hero */}
