@@ -1,9 +1,9 @@
 const nextConfig = {
-    output: 'export',
+  output: "export",
 
-    images: {
-        domains: ['media.licdn.com','th.bing.com'],
-    },
-}
+  images: {
+    domains: ["media.licdn.com", "th.bing.com"],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
