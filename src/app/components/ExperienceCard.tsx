@@ -6,7 +6,7 @@ type Props = {};
 
 export default function ExperienceCard({ }: Props) {
     return (
-        <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[800px] snap-center bg-[rgb(90,130,121)] bg-opacity-10  h-[600px]">
+        <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[800px] snap-center bg-[rgb(90,130,121)] bg-opacity-10  h-[500px]">
             <motion.img
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -18,9 +18,9 @@ export default function ExperienceCard({ }: Props) {
                 alt=""
 
             />
-            <div className="px-0 md:px-10 ">
-                <h4 className="text-4xl font-light">CEO of PAPAFAM</h4>
-                <p className="font-bold text-2xl mt-1">PAPAFAM</p>
+            <div className="px-0 md:px-10  overflow-hidden">
+                <h4 className="text-2xl font-light">CEO of PAPAFAM</h4>
+                <p className="font-bold text-xl mt-1">PAPAFAM</p>
                 <div className="flex space-x-2 my-2">
                     <Image
                         className="h-10 w-10 rounded-full"

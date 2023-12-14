@@ -19,7 +19,6 @@ export default function Home() {
         <About />
       </section>
       <section className="snap-center" id="experience">
-        
         <Experience />
       </section>
     </div>
