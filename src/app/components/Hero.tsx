@@ -3,6 +3,7 @@ import { Cursor, useTypewriter } from "react-simple-typewriter";
 import Image from "next/image";
 import BackgroundCircles from "./UI/Backgroundcircles";
 import Link from "next/link";
+import personal_2 from '@/app/assets/personal_5.jpg'
 
 type Props = {};
 
@@ -20,11 +21,10 @@ export default function Hero(props: Props): JSX.Element {
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
-      <div className="relative rounded-full h-32 w-32 mx-auto object-cover">
+      <div className="relative rounded-full h-36 w-36 mx-auto object-cover">
         <Image
-          // src="https://media.licdn.com/dms/image/D5603AQGxAJ_UOuRpwA/profile-displayphoto-shrink_800_800/0/1695105793902?e=1702512000&v=beta&t=XQWcBnxZayTSVY5361fLg3KBGbkScjb141XsYTE12b4"
+           src={personal_2}
           alt="Picture of the author"
-          src="https://th.bing.com/th/id/OIG.AxJpq0LQS0FZjXZyJFm_?pid=ImgGn"
           fill={true}
           className="rounded-full"
         />
@@ -41,7 +41,7 @@ export default function Hero(props: Props): JSX.Element {
           <Link href="#about">
             <button className="heroButton">About</button>
           </Link>
-          <Link href="/about">
+          <Link href="#experience">
             <button className="heroButton">Experience</button>
           </Link>
           <Link href="/about">
