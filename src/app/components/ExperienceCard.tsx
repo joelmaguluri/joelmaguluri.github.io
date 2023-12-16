@@ -2,11 +2,18 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-type Props = {};
+type Props = {
+    image:string
+    role:string
+    companyName:string
+    endDate:string
+    startDate:string
+    summary:string[]
+};
 
-export default function ExperienceCard({ }: Props) {
+export default function ExperienceCard({image ,role,companyName,endDate,startDate,summary}: Props) {
     return (
-        <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[800px] snap-center bg-[rgb(90,130,121)] bg-opacity-10  h-[500px]">
+        <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0  w-[200px] md:w-[600px] xl:w-[700px] snap-center bg-[rgb(90,130,121)] bg-opacity-10 h-full px-32 py-2">
             <motion.img
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -14,13 +21,13 @@ export default function ExperienceCard({ }: Props) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 className="w-32 h-32 rounded-full  object-cover object-center my-3"
-                src="https://cdn.sanity.io/images/ltuexkre/production/050ee674d199aa8d254af2b5ea480d3dc320cbb1-1240x1440.png"
+                src={image}
                 alt=""
 
             />
             <div className="px-0 md:px-10  overflow-hidden">
-                <h4 className="text-2xl font-light">CEO of PAPAFAM</h4>
-                <p className="font-bold text-xl mt-1">PAPAFAM</p>
+                <h4 className="text-2xl font-light">{role}</h4>
+                <p className="font-bold text-xl mt-1">{companyName}</p>
                 <div className="flex space-x-2 my-2">
                     <Image
                         className="h-10 w-10 rounded-full"
@@ -49,14 +56,11 @@ export default function ExperienceCard({ }: Props) {
                     />
                 </div>
                 <p className="uppercase py-5 text-gray-300">
-                    Started work... - Ended...
+                    {startDate} - {endDate}
                 </p>
-                <ul className="list-disc space-y-4 ml-5 text-lg">
-                    <li>Summary points</li>
-                    <li>Summary points</li>
-                    <li>Summary points</li>
-                    <li>Summary points</li>
-                    <li>Summary points</li>
+                <ul className="list-disc space-y-4 ml-5 text-lg overflow-y-hidden h-32">
+                    {summary.map(summary=><li key={summary} className="py-2">{summary}</li>)}
+         
                 </ul>
             </div>
         </article>
