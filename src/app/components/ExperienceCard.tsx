@@ -14,12 +14,26 @@ export default function ExperienceCard({ image, position, companyName, endDate, 
                 transition={{ duration: 1.2 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="w-32 h-32 rounded-full object-cover object-center my-3"
+                className="xs:h-24 xs:w-24 md:w-32 md:h-32 rounded-full object-cover object-center my-3"
                 src={image}
                 alt=""
             />
             <h4 className="text-2xl font-light">{position}</h4>
+            <p className="font-bold text-xl mt-1">{companyName}</p>
+            <p className="uppercase py-2 md:py-5 text-gray-300">
+                {startDate} - {endDate}
+            </p>
 
+
+            <div className="xs:h-64 md:h-64 overflow-y-scroll leading-loose no-scrollbar px-6">
+                <ul>
+                    {summary.map((point, index) => (
+                        <li key={'point' + index} className="list-desc justify-evenly">
+                            {point}
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </article>
 
     );
