@@ -7,7 +7,7 @@ import { Experience } from "./Experience";
 
 export default function ExperienceCard({ image, position, companyName, endDate, startDate, summary }: Experience) {
     return (
-        <article className="snap-center flex flex-col items-center bg-[rgb(90,130,121)] bg-opacity-10 sm:[600px] md:[400px] lg:[450px] xl:[450px] h-[600px] sm:[300px]">
+        <article className="snap-center flex flex-col items-center bg-[rgb(90,130,121)] bg-opacity-10 xs:[500px] sm:[500px] md:[450px] lg:[450px] xl:[450px] h-[600px] sm:[300px]">
             <motion.img
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ opacity: 1, y: 0 }}

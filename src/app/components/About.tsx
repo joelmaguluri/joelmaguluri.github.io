@@ -25,14 +25,14 @@ function About() {
         <h3 className="text-2xl uppercase tracking-[10px] text-[#bee7d3] sm:opacity-0 md:opacity-0 lg:opacity-100">
           About
         </h3>
-        <div className="items-center justify-between w-full space-y-3">
-          <h4 className="text-4xl font-semibold ">
+        <div className="items-center justify-between w-full">
+          <h4 className="xs:text-2xl md:text-4xl font-semibold py-2">
             <span>
               Here is a <span></span> little
             </span>{" "}
             background{" "}
           </h4>
-          <p className="text-base text-[#bee7d3] text-justify">
+          <p className="xs:text-sm md:text-base text-[#bee7d3] text-justify">
             {` I'm a passionate Software Developer with a deep appreciation for the human side of technology. Beyond my love for coding and AI, I find joy in exploring the harmonies of piano keys, sharing my thoughts through blogs, and taking leisurely walks.
           My mission is to blend the world of technology with these diverse passions. I'm dedicated to using my technical expertise to contribute to projects that enrich lives. Whether it's through lines of code or musical notes, I aim to create a brighter, more connected future. Let's connect and discover how we can make a difference together`}
           </p>
