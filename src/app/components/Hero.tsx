@@ -33,30 +33,29 @@ export default function Hero(props: Props): JSX.Element {
         <h2 className="text-sm uppercase text-[#a2f678] pb-2 tracking-[15px] xs:text-xs xs:tracking-[5px]">
           Software Engineer
         </h2>
-        <h1 className=" px-10 font-semibold inline-flex items-center">
+        <div className="px-10 font-semibold inline-flex items-center ">
           <span className="cursortext-st">{text}</span>
-          <span className="cursor-st">
-
-            <Cursor cursorColor="#a2f678"/>
-          </span>
-        </h1>
-        <div>
-          <Link href="#about">
-            <button className="heroButton">About</button>
-          </Link>
-          <Link href="#experience">
-            <button className="heroButton">Experience</button>
-          </Link>
-          <Link href="/about">
-            <button className="heroButton">Skills</button>
-          </Link>
-          <Link href="/about">
-            <button className="heroButton">Projects</button>
-          </Link>
-          <Link href="/about">
-            <button className="heroButton">Blog</button>
-          </Link>
+          <p className="cursor-st">
+            <Cursor cursorColor="#a2f678" />
+          </p>
         </div>
+      </div>
+      <div className="xs:space-x-2 xs:text-xs md:space-x-4 md:text-sm lg:space-x-6 lg:text-lg xs:tracking-normal sm:tracking-wide md:tracking-wider xl:tracking-widest my-2 z-20">
+        <Link href="#about">
+          <button className="heroButton">About</button>
+        </Link>
+        <Link href="#experience">
+          <button className="heroButton">Experience</button>
+        </Link>
+        <Link href="/about">
+          <button className="heroButton">Skills</button>
+        </Link>
+        <Link href="/about">
+          <button className="heroButton">Projects</button>
+        </Link>
+        <Link href="/about">
+          <button className="heroButton">Blog</button>
+        </Link>
       </div>
     </div>
   );
