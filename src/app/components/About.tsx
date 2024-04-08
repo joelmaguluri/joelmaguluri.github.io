@@ -5,9 +5,7 @@ import personal from '@/app/assets/personal.jpg'
 function About() {
   return (
     <div className=" relative flex flex-col  md:flex-row  h-screen text-center  max-w-7xl px-4 justify-evenly mx-auto items-center">
-      <h3 className="absolute text-2xl uppercase tracking-[10px] text-[#bee7d3] top-24  lg:hidden">
-        About
-      </h3>
+
 
       <motion.img
         initial={{
@@ -24,7 +22,7 @@ function About() {
 
       <div className="space-y-10 px-0 md:px-10 lg:px-36">
 
-        <h3 className="text-2xl uppercase tracking-[10px] text-[#bee7d3] sm:opacity-0 lg:opacity-100">
+        <h3 className="text-2xl uppercase tracking-[10px] text-[#bee7d3] sm:opacity-0 md:opacity-0 lg:opacity-100">
           About
         </h3>
 

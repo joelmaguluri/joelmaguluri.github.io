@@ -8,11 +8,11 @@ import personal_2 from '@/app/assets/personal_5.jpg'
 type Props = {};
 
 export default function Hero(props: Props): JSX.Element {
-  const [text, count] = useTypewriter({
+  const [text] = useTypewriter({
     words: [
-      "Greetings! I'm Sudeep Joel.",
-      "Fueling my passion for AI and ML.",
-      "Coding to shape a brighter future."
+      "Greetings! I'm Sudeep Joel",
+      "Fueling my passion for AI and ML",
+      "Coding to shape a brighter future"
     ],
     loop: true,
     delaySpeed: 1500,
@@ -23,19 +23,22 @@ export default function Hero(props: Props): JSX.Element {
       <BackgroundCircles />
       <div className="relative rounded-full h-36 w-36 mx-auto object-cover">
         <Image
-           src={personal_2}
+          src={personal_2}
           alt="Picture of the author"
           fill={true}
           className="rounded-full"
         />
       </div>
       <div className="z-20">
-        <h2 className="text-sm uppercase text-[#a2f678] pb-2 tracking-[15px]">
+        <h2 className="text-sm uppercase text-[#a2f678] pb-2 tracking-[15px] xs:text-xs xs:tracking-[5px]">
           Software Engineer
         </h2>
-        <h1 className="text-5xl lg:6xl px-10 font-semibold">
-          <span>{text}</span>
-          <Cursor cursorColor="#a2f678" />
+        <h1 className=" px-10 font-semibold inline-flex items-center">
+          <span className="cursortext-st">{text}</span>
+          <span className="cursor-st">
+
+            <Cursor cursorColor="#a2f678"/>
+          </span>
         </h1>
         <div>
           <Link href="#about">

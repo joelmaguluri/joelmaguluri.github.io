@@ -4,8 +4,25 @@
 
 @layer components {
     .heroButton {
-      @apply px-4 py-3 my-3 border border-[rgb(21,35,32)] rounded-full uppercase text-xs tracking-wider text-[#bee7d3] transition-all hover:border-[#a2f678]/40 hover:text-[#a2f678]/40;
+      @apply px-4 py-3 my-3 border border-[rgb(21,35,32)] rounded-full uppercase text-xs tracking-wider text-[#bee7d3] transition-all hover:border-[#a2f678]/40 hover:text-[#a2f678]/40 xs:tracking-normal sm:tracking-wide md:tracking-wider xl:tracking-widest;
+    }
+    .cursortext-st{
+      @apply text-6xl xs:text-lg sm:text-2xl lg:text-4xl;
+    }
+    .cursor-st{
+      @apply text-6xl xs:text-lg md:text-2xl  lg:text-4xl;
     }
 
   }
 
+  @layer utilities {
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+       /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+      }
+    }

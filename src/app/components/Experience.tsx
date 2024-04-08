@@ -1,53 +1,75 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import ExperienceCard from './ExperienceCard'
+import { ASULogoURL, cartedoLogoUrl, wisedocLogoUrl } from '../constants'
+
+export type Experience = {
+    image: string
+    companyName: string
+    position: string
+    summary: string[]
+    startDate: string
+    endDate: string
+
+}
 
 
-const Experienceobj = [
+const experienceObj = [
     {
-        image: 'https://media.licdn.com/dms/image/C4E0BAQGMwHywWNH_ew/company-logo_200_200/0/1630568304235/cartedo_logo?e=1710374400&v=beta&t=3eAKKXBBjfuxXg8SumqS5pTSIIcoxgDjFMOBvTZWG60',
-        role: "Fullstack Developer",
-        companyName: "Cartedo",
-        startDate: 'Jan 2021',
-        endDate: 'July 2022',
-        summary: [`Developed TypeScript/Node.js REST APIs for managing 10,000+ workspaces, projects, and challenges in MongoDB, delivering 
-        a 30% speed improvement with dynamic user and organization controls.`,
-            `● Utilized Kafka Streams for real-time dynamic dashboards on challenges, projects, and workspaces, driving a remarkable 20% 
-        increase in user engagement. `,
-            `● Integrated Amazon S3 for efficient media storage, coupled with Unsplash API for customizable banners, driving a 20% boost
-        in user interactions and enhancing visual appeal`]
+        image: ASULogoURL,
 
-    },
-
-    {
-        image: 'https://th.bing.com/th/id/OIP.40p-bXkFUBo4bet0ieY9-QAAAA?w=193&h=193&c=7&r=0&o=5&dpr=1.3&pid=1.7',
-        role: "Fullstack Developer",
-        companyName: "Wisedoc",
-        startDate: 'Jan 2021',
-        endDate: 'July 2022',
-        summary: [`Boosted User Interaction: Designed and implemented React components resulting in a remarkable 25% increase in user interaction, enhancing the overall user experience and engagement on the platform.`,
-            `Streamlined Document Conversion: Spearheaded document conversion using AWS Lambda, successfully achieving a significant 40% reduction in processing time. This optimization not only improved efficiency but also contributed to a more seamless workflow for users interacting with document-related features.`,
-            `Enhanced User Efficiency: Through the strategic combination of React component design and AWS Lambda implementation, the project led to a tangible enhancement in user efficiency, positively impacting both interaction rates and document processing times for a more streamlined and effective user experience.`
+        companyName: "Arizona State Universiy",
+        location: "Tempe, Arizona",
+        position: "Software Engineer",
+        startDate: "01/2023",
+        endDate:"present",
+        summary: [
+            "1. Grading assignments and projects: Completed grading for 100 assignments and 50 projects",
+            "2. Providing constructive feedback on assignments and projects: Delivered detailed feedback to 300 students",
+            "3. Ensuring fair and consistent evaluation of student work: Maintained grading consistency across all assignments and projects",
+            "4. Mentoring and guiding students through courses: Provided personalized guidance to 300+ students",
+            "5. Offering valuable insights and explanations on course material: Hosted 30+ additional review sessions for course material clarification",
+            "6. Clarifying complex concepts to aid student understanding: Received 95% positive feedback on clarity of explanations",
+            "7. Assisting in administrative tasks related to course management: Contributed to the organization of 20+ course-related events",
+            "8. Ensuring smooth class operations and logistics: Resolved 100% of student queries within 24 hours"
+        
         ]
-
     },
     {
-        image: 'https://th.bing.com/th/id/OIP.40p-bXkFUBo4bet0ieY9-QAAAA?w=193&h=193&c=7&r=0&o=5&dpr=1.3&pid=1.7',
-        role: "Fullstack Developer",
-        companyName: "Cartedo",
-        startDate: 'Jan 2021',
-        endDate: 'July 2022',
-        summary: [`Developed TypeScript/Node.js REST APIs for managing 10,000+ workspaces, projects, and challenges in MongoDB, delivering 
-        a 30% speed improvement with dynamic user and organization controls.`,
-            `● Utilized Kafka Streams for real-time dynamic dashboards on challenges, projects, and workspaces, driving a remarkable 20% 
-        increase in user engagement. `,
-            `● Integrated Amazon S3 for efficient media storage, coupled with Unsplash API for customizable banners, driving a 20% boost
-        in user interactions and enhancing visual appeal`]
-
+      
+        image:cartedoLogoUrl,
+        companyName: "Cartedo CORP",
+        location: "Hyderabad, India",
+        position: "Software Engineer",
+        startDate: "06/2020",
+        endDate: "07/2022",
+        summary: [
+            "Led development of an e-learning platform using Next JS and React, incorporating Tailwind CSS for streamlined styling and design; implemented core functionalities (workspace, project management) resulting in 500,000+ users across 5+ countries.",
+            "Optimized system scalability by 70% via Database Schema and Typescript API enhancements, alongside efficient state management and lazy loading with Context API, leading to a 40% rendering time improvement and minimized re-renders.",
+            "Engineered a seamless migration from Rails to React, ensuring uninterrupted operations and slashing response times to under 90ms by implementing microservice architecture for optimized functionalities (e.g., S3 file upload, User Authentication).",
+            "Elevated user engagement by 15% with real-time dashboards via Kafka Streams, leveraging Google Analytics for insightful metrics tracking, thus enhancing user participation and demographics understanding.",
+            "Collaborated closely with Data analysis and Data Engineering teams to turbocharge ETL pipelines in Spark, resulting in a 30% boost in speed for user behavior analysis and enhanced user segmentation using DBSCAN clustering.",
+            "Revolutionized development environments with Docker packaging and automated CI/CD pipelines using Bitbucket. Mentored 3+ junior engineers, simplifying their work by streamlining processes and documenting architectures."
+        ]
     },
+    {
+        image:wisedocLogoUrl,
+        companyName: "Wisedoc INC",
+        location: "Hyderabad, India",
+        position: "Full Stack Developer",
+        startDate: "02/2019",
+        endDate: "05/2020",
+        summary: [
+            "Led development of a responsive editor app using React JS, HTML, CSS, enhancing UX with 20% longer session durations and 25% faster task completions; Utilized Redux for scalable data flow optimization.",
+            "Employed PdfMake and DocX in Slate JS, reducing processing time by 30% and increasing throughput by 20%, resulting in 30% overall system efficiency improvement; Implemented distributed architecture with serverless functions.",
+            "Designed Wisedoc IEEE template schema for PDF export, reducing errors by 15% and enhancing accuracy by 25%; Implemented real-time collaboration feature for seamless document editing.",
+            "Implemented async processing and caching for scalable document generation on AWS Lambda, handling 10x peak traffic with 25% latency reduction; Utilized efficient data structures for improved responsiveness.",
+            "Spearheaded automated testing, increasing code coverage by 20% and reducing bugs by 25%; Developed Jest and Enzyme test suites for UI components and Lambda functions, ensuring reliability."
+        ]
+    }
+];
 
 
-]
 function Experience() {
     return (
         <motion.div
@@ -57,12 +79,10 @@ function Experience() {
 
             className="h-screen flex relative  flex-col text-left md:flex-row max-w-full md:px-24   items-center justify-evenly xs:px-12">
 
-            <h3 className='absolute top-24 uppercase tracking-[20px] text-2xl text-[#bee7d3] '>Experience</h3>
-            <div className='w-full flex flex-col md:flex-row space-x-5 overflow-x-scroll  snap-x snap-mandatory h-full    mt-32 md:mt-24 py-8 md:py-24 xs:items-center xs:space-y-2'>
+            {/* <h3 className='absolute top-24 uppercase tracking-[20px] text-2xl text-[#bee7d3] opacity-100 sm:opacity-0 md:opacity-0 xl:opacity-100'>Experience</h3> */}
+            <div className='w-full  overflow-x-scroll  snap-x snap-mandatory h-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-[20%] sm:px-12 my-3 py-6'>
 
-                {Experienceobj.map(({ image, role, companyName, startDate, endDate, summary }) => <ExperienceCard image={image} key={image} role={role} companyName={companyName} startDate={startDate} endDate={endDate} summary={summary} />)}
-
-
+                {experienceObj.map(({ image, position,companyName, startDate, endDate, summary }: Experience) => <ExperienceCard image={image} key={image} position={position} companyName={companyName} startDate={startDate} endDate={endDate} summary={summary} />)}
 
             </div>
         </motion.div>
