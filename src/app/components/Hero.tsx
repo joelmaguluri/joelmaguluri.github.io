@@ -40,7 +40,7 @@ export default function Hero(props: Props): JSX.Element {
           </p>
         </div>
       </div>
-      <div className="xs:space-x-2 xs:text-xs md:space-x-4 md:text-sm lg:space-x-6 lg:text-lg xs:tracking-normal sm:tracking-wide md:tracking-wider xl:tracking-widest my-2 z-20">
+      <div className="xs:space-x-2 xs:text-xs md:space-x-4 md:text-sm lg:space-x-6 lg:text-md xs:tracking-normal sm:tracking-wide md:tracking-wider xl:tracking-widest my-2 z-20">
         <Link href="#about">
           <button className="heroButton">About</button>
         </Link>

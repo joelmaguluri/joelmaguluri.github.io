@@ -20,7 +20,7 @@ const experienceObj = [
 
         companyName: "Arizona State Universiy",
         location: "Tempe, Arizona",
-        position: "Software Engineer",
+        position: "Teaching Assistant",
         startDate: "01/2023",
         endDate:"present",
         summary: [

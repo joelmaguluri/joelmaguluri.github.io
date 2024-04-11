@@ -4,7 +4,7 @@
 
 @layer components {
     .heroButton {
-      @apply border border-[rgb(21,35,32)] rounded-full uppercase  tracking-wider text-[#bee7d3] transition-all hover:border-[#a2f678]/40 hover:text-[#a2f678]/40 ;
+      @apply border border-[rgb(21,35,32)] rounded-full uppercase  tracking-wider text-[#bee7d3] transition-all hover:border-[#a2f678]/40 hover:text-[#a2f678]/40 p-2;
     }
     .cursortext-st{
       @apply text-6xl xs:text-lg sm:text-2xl lg:text-4xl;
