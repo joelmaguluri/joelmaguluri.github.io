@@ -77,7 +77,7 @@ function Experience() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5 }}
 
-            className="h-screen flex relative  flex-col text-left md:flex-row max-w-full md:px-24   items-center justify-evenly xs:px-12">
+            className="h-screen flex relative  flex-col text-left md:flex-row max-w-full md:px-24   items-center justify-evenly xs:px-12 overflow-hidden">
 
             {/* <h3 className='absolute top-24 uppercase tracking-[20px] text-2xl text-[#bee7d3] opacity-100 sm:opacity-0 md:opacity-0 xl:opacity-100'>Experience</h3> */}
             <div className='w-full  overflow-x-scroll  snap-x snap-mandatory h-full grid grid-cols-1 md:grid-cols-1 xl:grid-cols-3 gap-4 xs:mt-[40%] xl:mt-[20%] my-3 py-6'>
@@ -85,7 +85,7 @@ function Experience() {
                 {experienceObj.map(({ image, position,companyName, startDate, endDate, summary }: Experience) => <ExperienceCard image={image} key={image} position={position} companyName={companyName} startDate={startDate} endDate={endDate} summary={summary} />)}
 
             </div>
-            <h3 className='absolute top-24 uppercase tracking-[20px] text-2xl text-[#bee7d3] '>Experience</h3>
+            <h3 className='absolute top-[100px] uppercase tracking-[20px] text-2xl text-[#bee7d3] mb-3 '>Experience</h3>
 
         </motion.div>
     )
