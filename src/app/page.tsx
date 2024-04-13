@@ -8,7 +8,7 @@ import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
 export default function Home() {
   return (
-    <div className="bg-[rgb(21,35,32)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 duration-500 scrollbar-track-[#a2f678]/10 scrollbar-thumb-[#00a359]/80 scrollbar-thin overflow-x-hidden">
+    <div className="bg-[rgb(21,35,32)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 duration-500 scrollbar-track-[#a2f678]/10 scrollbar-thumb-[#00a359]/80 scrollbar overflow-x-hidden">
       <Head>
         <title>{`Sudeep's Portfolio`}</title>
       </Head>
